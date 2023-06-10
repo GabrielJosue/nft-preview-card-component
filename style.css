@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.8rem;
+    font-family: 'Outfit' , sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    min-height: 100vh;
+}
+.line{
+    width: 31.2rem;
+    height: 1px;
+    color: hsl(215, 32%, 27%);
+}
+/* .container{
+    max-width: 144rem;
+    margin: 20rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+} */
+.nft-card{
+    max-width: 35rem;
+    height: 59.9rem;
+    background-color: hsl(216, 50%, 16%);
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem; */
+    border-radius: 15px;
+}
+/* .item{
+    width: 100%;
+    padding: 0 3rem;
+    position: relative;
+} */
+/* picture{
+    position: relative;
+} */
+/* img, picture{
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+} */
+.equilibrium-img{
+    /* position: relative; */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: all 0.4s;
+}
+
+/* .item img:hover::before{
+  content: './images/icon-view.svg';
+  position: absolute;
+  top: 50%;
+  background-image: url('./images/icon-view.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: red;
+  
+} */
+/* .overlay {
+    position: absolute;
+    background-image:linear-gradient( hsl(178, 100%, 50%));
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+   
+} */
+.equilibrium-img:hover{
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+    background-color: hsl(178, 100%, 50%);
+    transform:scale(1.1);
+    opacity: 0.5;
+}
+.view-img{
+    stroke: #fff;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.heading-primary{
+    color: hsl(0, 0%, 100%);
+    transition: all ease-in 1s;
+}
+.heading-primary:hover{
+    color: hsl(178, 100%, 50%);
+}
+.description{
+    color: hsl(215, 51%, 70%);
+}
+.offer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.offer .price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color:hsl(178, 100%, 50%)
+}
+.offer .day-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.6rem;
+    color: hsl(215, 51%, 70%);
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  
+}
+.author img{
+ width: 3.3rem;
+ height: 3.3rem;
+ border-radius: 50%;
+ border: 1px solid #fff;
+}
+.author p , span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: hsl(215, 51%, 70%);
+}
+.author span{
+    color: #fff;
+    transition: all ease-in 1s;
+}
+.author span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.img-item{
+ width: 80%;
+ height: 100%;
+ margin: 2rem auto;
+ border-radius: 0.8rem;
+ background-image: url(images/image-equilibrium.jpg);
+ background-size: cover;
+ background-position: center;
+ background-repeat: no-repeat;
+}
+
+.eye-icon{
+opacity: 0;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    /* background-color: hsla(277, 64%, 61%,40%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.img-item:hover{
+    background-color: hsl(178, 100%, 50%);
+    transform:scale(1.1);
+    opacity: 0.5;
+}
+.img-item:hover .overlay .eye-icon{
+    opacity: 1;
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 0 20px;
+}
+
+.card-author{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    border-top: 2px #2E405A solid;
+}
+
+/* flebox */
+.nft-card-flex{
+    max-width: 35rem;
+    height: 59.9rem;
+    background-color: hsl(216, 50%, 16%);
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    border-radius: 15px;
+}
+.card-img-container{
+    position: relative;
+}
+.card-img{
+display:block;
+ width: 80%;
+ height: auto;
+}
